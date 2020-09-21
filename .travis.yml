@@ -3,5 +3,8 @@ language: ruby
 
 script:
   - echo "$test"
+  - echo "asdf nahradit asdjklhas kldajsdkj adjls as" > file.txt
   - echo "$test2"
+  - sed -i "s/nahradit/$test2/g" file.txt
+  - cat file.txt
 
