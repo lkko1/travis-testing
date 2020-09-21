@@ -3,7 +3,7 @@ language: ruby
 
 jobs:
   include:
-    - stage:
+    - stage: not pr
       script:
         - echo "$test"
         - echo "asdf nahradit asdjklhas kldajsdkj adjls as" > file.txt
@@ -12,7 +12,7 @@ jobs:
         - cat file.txt
         - echo "nene"
       if: NOT type = "pull_request"
-    - stage:
+    - stage: all
       script:
         - echo "$test"
         - echo "asdf nahradit asdjklhas kldajsdkj adjls as" > file.txt
