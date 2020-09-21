@@ -1,0 +1,7 @@
+language: ruby
+
+
+script:
+  - echo "$test"
+  - echo "$test2"
+
